@@ -1,0 +1,147 @@
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #3a3a3a;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    background-color:#ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+header a {
+    text-decoration: 0;
+    color: inherit;
+}
+
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* word-spacing: 2px;  */
+    color: #2f2f2f;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+
+}
+/* .active {
+    border-bottom:1px solid #2f2f2f ;
+} */
+
+nav{
+    position: absolute;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+
+
+
+
+}
+
+#nav-toggle:checked~nav{
+    display: block;
+   
+}
+
+#nav-toggle{
+    display: none;
+}
+
+.nav-toggle-lable {
+    font-size: 2rem;
+}
+main{
+    background-color: chocolate;
+    flex: 1 0 auto;
+    margin-top: 47px;
+}
+
+/* footer{
+    background-color: burlywood;} */
+    #social-networks {
+        text-align: center;
+        padding: 20px 0;
+        display: flex;
+        list-style-type: none;
+        justify-content:space-evenly ;
+
+    }
+
+    #social-networks i {
+        font-size: 160%;
+        padding: 5%;
+        color: #3a3a3a;
+    }
+
+
+
+
+@media screen and (min-width: 768px) {
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+   #menu {
+    display: flex;
+   }
+   #menu > li {
+    padding-left: 1rem;
+   }
+   .nav-toggle-lable {
+    display: none;
+   }
+   #logo {
+    font-size: 200%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+   }
+   main {
+    margin-top: 77px;
+   }
+
+   
+}
+
+@media screen and (min-width: 992px) {
+    #menu a:hover{
+        border-bottom: 1px solid #2f2f2f ;
+    }
+}
