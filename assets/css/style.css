@@ -187,9 +187,8 @@ main {
 
 
 /* sign up page  */
-main {
-    /* display: flex; */
-}
+
+
 #signup {
     background: url(../images/signup-image.webp);
     background-size: cover;
