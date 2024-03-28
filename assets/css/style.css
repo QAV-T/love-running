@@ -175,6 +175,8 @@ main{
 
 #photos {
     line-height: 1;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
 }
 
 /* footer{
