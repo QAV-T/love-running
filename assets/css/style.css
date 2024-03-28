@@ -165,7 +165,17 @@ main{
     justify-content: center;
 }
 
+/* gallery page */
 
+#photos img {
+    width: 100%;
+    line-height: 1em;
+
+}
+
+#photos {
+    line-height: 1;
+}
 
 /* footer{
     background-color: burlywood;} */
@@ -208,6 +218,15 @@ main{
         color: #fafafa;
     }
 
+
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+
+    }
+    
+}
 
 
 
@@ -261,6 +280,12 @@ main{
      align-self: flex-end;
    }
 
+   #photos {
+    column-count: 3;
+    column-gap: 0;
+
+}
+
    
 }
 
@@ -294,5 +319,10 @@ main{
 
     #benefits-physical > div {
         align-self: flex-end;
+    }
+    #photos {
+        column-count: 4;
+        column-gap: 0;
+
     }
 }
